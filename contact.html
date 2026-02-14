@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Contact Us | IGB SOFT-TECH</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Nigerian digital marketing agency specializing in social media advertising, branding, and digital strategy. Grow your business with measurable results.">
+    <meta name="keywords" content="digital marketing Nigeria, social media marketing, Lagos digital agency, Abuja marketing, SEO Nigeria">
+    <meta name="author" content="IGB SOFT-TECH">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="IGB SOFT-TECH | Premium Digital Marketing Agency">
+    <meta property="og:description" content="Transform your business with data-driven digital marketing strategies in Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://igbsofttech.com">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D1F3C',
+                        secondary: '#FFB800',
+                        accent: '#00A8FF',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                        'typing': 'typing 3.5s steps(40, end), blink-caret .75s step-end infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(255, 184, 0, 0.5)' },
+                            '50%': { opacity: 0.8, boxShadow: '0 0 40px rgba(255, 184, 0, 0.8)' }
+                        },
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS (minor touch for glass effect) -->
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFB800, #00A8FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* mobile tap improvements */
+        button, a { -webkit-tap-highlight-color: rgba(255, 184, 0, 0.2); }
+        /* faq answer transition */
+        .faq-answer { transition: all 0.3s ease; }
+    </style>
+  <!-- Favicon -->
+    <!-- Replace these with your actual favicon files -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased overflow-x-hidden">
+
+    <!-- ===== MOBILE-FIRST NAVIGATION (improved touch targets) ===== -->
+    <nav class="fixed w-full z-50 bg-primary/95 backdrop-blur-md shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3 md:py-4">
+                <!-- Logo with dark skin person avatar (tiny) for brand touch -->
+                <a href="index.html" class="flex items-center space-x-2 md:space-x-3">
+                    <!-- smiling dark skin emoji as temporary avatar (image replacement) -->
+                    <div class="flex items-center justify-center h-9 w-9 rounded-full bg-gradient-to-br from-secondary to-yellow-400">
+                        <span class="text-xl">👨🏿‍💻</span>
+                    </div>
+                    <div>
+                        <h1 class="text-base md:text-xl font-bold leading-tight">IGB SOFT<span class="text-secondary"> TECH</span></h1>
+                        <p class="text-[10px] md:text-xs text-gray-400 hidden xs:block">digital first</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu (hidden on mobile) -->
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="index.html" class="text-sm lg:text-base hover:text-accent transition font-medium">Home</a>
+                    <a href="about.html" class="text-sm lg:text-base hover:text-accent transition font-medium">About</a>
+                    <a href="services.html" class="text-sm lg:text-base text-secondary font-semibold hover:text-accent transition">Services</a>
+                    <a href="portfolio.html" class="text-sm lg:text-base hover:text-accent transition font-medium">Portfolio</a>
+                    <a href="contact.html" class="text-sm lg:text-base hover:text-accent transition font-medium">Contact</a>
+                    <a href="ratecard.html" class="bg-secondary text-primary px-4 py-2 rounded-lg text-sm font-bold hover:bg-yellow-500 transition shadow-md whitespace-nowrap">Rate Card</a>
+                </div>
+
+                <!-- Mobile Menu Button + WhatsApp fast contact (mobile only) -->
+                <div class="flex items-center space-x-3 md:hidden">
+                    <!-- quick WhatsApp tap on mobile -->
+                    <a href="https://wa.me/2348074022213?text=Hello%20IGB%20SOFT-TECH!" target="_blank" class="bg-green-500 p-2 rounded-full w-9 h-9 flex items-center justify-center shadow-lg">
+                        <i class="fab fa-whatsapp text-lg text-white"></i>
+                    </a>
+                    <button id="mobileMenuBtn" class="text-2xl focus:outline-none w-10 h-10 flex items-center justify-center rounded-lg bg-gray-800/50">
+                        <i class="fas fa-bars text-secondary"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (collapsible) with larger touch targets -->
+            <div id="mobileMenu" class="hidden md:hidden mt-2 pb-5 space-y-3 text-base">
+                <a href="index.html" class="block py-3 px-4 bg-gray-800/40 rounded-lg hover:bg-gray-700 transition"><i class="fas fa-home mr-3 text-secondary"></i>Home</a>
+                <a href="about.html" class="block py-3 px-4 bg-gray-800/40 rounded-lg hover:bg-gray-700 transition"><i class="fas fa-users mr-3 text-secondary"></i>About</a>
+                <a href="services.html" class="block py-3 px-4 bg-gray-800/40 rounded-lg hover:bg-gray-700 transition text-secondary font-semibold"><i class="fas fa-cog mr-3 text-secondary"></i>Services</a>
+                <a href="portfolio.html" class="block py-3 px-4 bg-gray-800/40 rounded-lg hover:bg-gray-700 transition"><i class="fas fa-briefcase mr-3 text-secondary"></i>Portfolio</a>
+                <a href="contact.html" class="block py-3 px-4 bg-gray-800/40 rounded-lg hover:bg-gray-700 transition"><i class="fas fa-envelope mr-3 text-secondary"></i>Contact</a>
+                <a href="ratecard.html" class="block py-3 px-4 bg-secondary text-primary font-bold rounded-lg text-center mt-2 shadow-md"><i class="fas fa-tag mr-2"></i> Rate Card</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO with dark skin person image (photorealistic) -->
+    <section class="relative pt-28 pb-12 md:pt-36 md:pb-20 mt-4 bg-gradient-to-b from-primary/40 to-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="text-center md:text-left md:w-3/5">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 gradient-text">Contact Us</h1>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto md:mx-0">Let's talk about your digital goals. We're based in Asaba, serving clients worldwide.</p>
+                    <!-- quick contact chips -->
+                    <div class="flex flex-wrap gap-3 justify-center md:justify-start mt-6">
+                        <span class="bg-gray-800/70 px-5 py-2 rounded-full text-sm flex items-center"><i class="fas fa-phone-alt text-secondary mr-2"></i>+234 807 402 2213</span>
+                        <span class="bg-gray-800/70 px-5 py-2 rounded-full text-sm flex items-center"><i class="fas fa-clock text-secondary mr-2"></i>Mon-Fri 9am-6pm</span>
+                    </div>
+                </div>
+                <!-- dark skin professional image (avatar) -->
+                <div class="md:w-2/5 flex justify-center">
+                    <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-secondary/30 shadow-2xl">
+                        <!-- Image of a dark-skinned person (modern African marketer) - using placeholder with Unsplash + attribute? We'll use a CDN photo representative -->
+                        <img src="https://images.unsplash.com/photo-1531427186627-4fd839abc7d2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Dark skin team member" 
+                             class="w-full h-full object-cover object-top"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (mobile-optimized stacking) -->
+    <section class="py-16 md:py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+                <!-- Contact Form (glass) -->
+                <div class="glass-effect rounded-2xl p-6 md:p-8 order-2 lg:order-1">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 flex items-center"><i class="fas fa-paper-plane text-secondary mr-3"></i> Send a message</h2>
+                    <form id="contactForm" class="space-y-5">
+                        <div>
+                            <label class="block text-gray-300 mb-1 text-sm font-medium">Full Name *</label>
+                            <input type="text" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-4 focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition text-base" placeholder="Your name" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-1 text-sm font-medium">Email *</label>
+                            <input type="email" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-4 focus:border-secondary focus:ring-1 outline-none text-base" placeholder="hello@domain.com" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-1 text-sm font-medium">Phone (optional)</label>
+                            <input type="tel" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-4 focus:border-secondary outline-none text-base" placeholder="+234 ...">
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-1 text-sm font-medium">Service needed</label>
+                            <select class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-4 focus:border-secondary outline-none text-base appearance-none">
+                                <option value="">Select a service</option>
+                                <option value="social">Social Media Advertising</option>
+                                <option value="web">Website Development</option>
+                                <option value="design">Graphic Design</option>
+                                <option value="branding">Business Branding</option>
+                                <option value="strategy">Digital Strategy</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-1 text-sm font-medium">Message *</label>
+                            <textarea rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-4 focus:border-secondary outline-none text-base" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-secondary to-yellow-500 text-primary font-bold py-4 rounded-xl text-lg hover:scale-[1.02] active:scale-[0.99] transition shadow-lg shadow-secondary/20">Send Message <i class="fas fa-arrow-right ml-2"></i></button>
+                    </form>
+                </div>
+
+                <!-- Contact Info + images of dark skin people (cards) -->
+                <div class="order-1 lg:order-2 space-y-8">
+                    <!-- Contact methods with dark skin image chips -->
+                    <div class="glass-effect rounded-2xl p-6 md:p-8">
+                        <h2 class="text-2xl md:text-3xl font-bold mb-6 flex items-center"><i class="fas fa-address-card text-secondary mr-3"></i> Reach us directly</h2>
+                        <div class="space-y-6">
+                            <!-- each item has small dark skin avatar icon -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-secondary/30 to-yellow-600/30 rounded-full flex items-center justify-center flex-shrink-0 border border-secondary/30">
+                                    <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="call rep" class="w-8 h-8 rounded-full object-cover"> <!-- random dark skin portrait (API provides diverse) -->
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold flex items-center">Phone <span class="ml-2 text-xs bg-green-500/20 px-2 py-0.5 rounded">quick</span></h4>
+                                    <a href="tel:+2348074022213" class="text-gray-300 text-lg hover:text-secondary block">+234 807 402 2213</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-secondary/30 to-yellow-600/30 rounded-full flex items-center justify-center flex-shrink-0 border border-secondary/30">
+                                    <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="email rep" class="w-8 h-8 rounded-full object-cover"> <!-- dark skin woman -->
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold">Email</h4>
+                                    <a href="mailto:iwolo12geo@gmail.com" class="text-gray-300 hover:text-secondary break-all">iwolo12geo@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-secondary/30 to-yellow-600/30 rounded-full flex items-center justify-center flex-shrink-0 border border-secondary/30">
+                                    <i class="fas fa-map-marker-alt text-secondary text-xl"></i> <!-- location icon -->
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold">Visit</h4>
+                                    <p class="text-gray-300">Asaba, Delta State, Nigeria<br> (remote consultations available)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-secondary/30 to-yellow-600/30 rounded-full flex items-center justify-center flex-shrink-0 border border-secondary/30">
+                                    <i class="fas fa-clock text-secondary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold">Hours</h4>
+                                    <p class="text-gray-300">Mon-Fri 9am-6pm | Sat 10am-4pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Two dark skin persons side by side (team photos) -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="rounded-2xl overflow-hidden shadow-xl border-2 border-secondary/20">
+                            <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dark skin male team lead" class="w-full h-32 md:h-40 object-cover">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-xl border-2 border-secondary/20">
+                            <img src="https://images.pexels.com/photos/3771120/pexels-photo-3771120.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dark skin female strategist" class="w-full h-32 md:h-40 object-cover">
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp CTA with avatar group -->
+                    <div class="glass-effect rounded-2xl p-6 text-center relative overflow-hidden">
+                        <div class="flex justify-center -space-x-3 mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-secondary" alt="agent">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-10 h-10 rounded-full border-2 border-secondary" alt="agent">
+                            <img src="https://randomuser.me/api/portraits/men/62.jpg" class="w-10 h-10 rounded-full border-2 border-secondary" alt="agent">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Quick WhatsApp</h3>
+                        <p class="text-gray-300 text-sm mb-5">Instant reply from our team</p>
+                        <a href="https://wa.me/2348074022213?text=Hello%20IGB%20SOFT-TECH!%20I'd%20like%20to%20discuss%20a%20project." target="_blank" class="inline-block bg-green-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition active:scale-95 w-full sm:w-auto">
+                            <i class="fab fa-whatsapp mr-2"></i> Start chat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (mobile optimized) -->
+    <section class="py-16 bg-gray-900/70">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Frequently Asked <span class="text-secondary">Questions</span></h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-gray-800/40 backdrop-blur-sm rounded-2xl p-5 border border-gray-700/50">
+                    <button class="faq-question w-full text-left flex justify-between items-center gap-4">
+                        <span class="text-base md:text-lg font-semibold pr-4">What's the typical timeline for a digital marketing campaign?</span>
+                        <i class="fas fa-chevron-down text-secondary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer mt-3 text-gray-300 hidden text-sm md:text-base">
+                        Most campaigns show initial results within 30 days, with optimal performance achieved by 3 months. We provide detailed timelines during our consultation based on your specific goals.
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-gray-800/40 backdrop-blur-sm rounded-2xl p-5 border border-gray-700/50">
+                    <button class="faq-question w-full text-left flex justify-between items-center gap-4">
+                        <span class="text-base md:text-lg font-semibold pr-4">Do you work with businesses outside Nigeria?</span>
+                        <i class="fas fa-chevron-down text-secondary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer mt-3 text-gray-300 hidden text-sm md:text-base">
+                        Yes, we work with businesses across Africa and internationally. Our expertise in digital marketing applies globally, though we specialize in African markets.
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-gray-800/40 backdrop-blur-sm rounded-2xl p-5 border border-gray-700/50">
+                    <button class="faq-question w-full text-left flex justify-between items-center gap-4">
+                        <span class="text-base md:text-lg font-semibold pr-4">What information do you need to start a project?</span>
+                        <i class="fas fa-chevron-down text-secondary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer mt-3 text-gray-300 hidden text-sm md:text-base">
+                        We typically need: Your business goals, target audience details, current marketing materials (if any), and budget considerations. We'll guide you through everything during our initial consultation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA with dark skin team image banner -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="relative rounded-3xl overflow-hidden bg-gradient-to-r from-primary to-gray-900 p-8 md:p-12 border border-secondary/20">
+                <div class="absolute inset-0 opacity-20">
+                    <img src="https://images.pexels.com/photos/6382643/pexels-photo-6382643.jpeg?auto=compress&cs=tinysrgb&w=600" alt="team dark skin" class="w-full h-full object-cover">
+                </div>
+                <div class="relative z-10 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to <span class="text-secondary">grow</span> your brand?</h2>
+                    <p class="text-lg md:text-xl text-gray-200 mb-8">Get a free consultation & custom proposal</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://wa.me/2348074022213" target="_blank" class="bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:scale-105 transition flex items-center justify-center gap-2"><i class="fab fa-whatsapp"></i> WhatsApp now</a>
+                        <a href="mailto:iwolo12geo@gmail.com" class="bg-gradient-to-r from-accent to-blue-600 text-white font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:scale-105 transition flex items-center justify-center gap-2"><i class="fas fa-envelope"></i> Send email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple footer (dark skin icons) -->
+    <footer class="border-t border-gray-800 py-8 text-center text-gray-400">
+        <p class="text-sm">© 2025 IGB SOFT-TECH. All rights reserved. — Asaba, Nigeria</p>
+        <div class="flex justify-center gap-4 mt-4">
+            <span class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center"><i class="fab fa-instagram text-secondary"></i></span>
+            <span class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center"><i class="fab fa-linkedin-in text-secondary"></i></span>
+            <span class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center"><i class="fab fa-x-twitter text-secondary"></i></span>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu + FAQ accordion -->
+    <script>
+        (function() {
+            // mobile menu toggle
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = menuBtn.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+            }
+
+            // FAQ accordion (with chevron rotation)
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const btn = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = btn.querySelector('i');
+                btn.addEventListener('click', () => {
+                    answer.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+
+            // form prevent default for demo
+            const form = document.getElementById('contactForm');
+            if(form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Thanks for reaching out! (Demo) We will get back to you shortly.');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

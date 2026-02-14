@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Services — IGB SOFT-TECH | Performance Marketing & Digital Growth Nigeria</title>
+    <!-- SEO + Strategic Keywords -->
+    <meta name="description" content="Meta Ads agency Nigeria: Reduce CAC, scale revenue with Facebook, Instagram, TikTok & funnel strategy. Lagos digital marketing for lead generation & ROAS.">
+    <meta name="keywords" content="Meta Ads agency Nigeria, Facebook Ads management Lagos, TikTok Ads Nigeria, lead generation agency, digital marketing Nigeria, IGB SOFT-TECH">
+    <meta name="author" content="IGB SOFT-TECH">
+    <!-- Open Graph / social proof -->
+    <meta property="og:title" content="Services: Revenue‑driven digital marketing | IGB SOFT-TECH">
+    <meta property="og:description" content="We build high intent buyer campaigns that lower CAC and scale lead flow. Meta, TikTok, funnel strategy & analytics for Nigerian brands.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://igbsofttech.com/services">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind custom config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D1F3C',
+                        secondary: '#FFB800',
+                        accent: '#00A8FF',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(255, 184, 0, 0.5)' },
+                            '50%': { opacity: 0.8, boxShadow: '0 0 40px rgba(255, 184, 0, 0.8)' }
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- minimal custom CSS -->
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #FFB800 0%, #00A8FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        /* mobile menu */
+        .mobile-menu-open {
+            display: block !important;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 50;
+        }
+        /* process step connector line (hidden on mobile) */
+        @media (min-width: 768px) {
+            .process-line::after {
+                content: '';
+                position: absolute;
+                top: 2.5rem;
+                left: 60%;
+                width: 80%;
+                height: 2px;
+                background: linear-gradient(90deg, #FFB800 0%, #00A8FF 100%);
+                opacity: 0.3;
+                z-index: 0;
+            }
+        }
+    </style>
+    <!-- Favicon -->
+    <!-- Replace these with your actual favicon files -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased overflow-x-hidden">
+
+<!-- Schema Markup (Service) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Digital Marketing Agency Nigeria",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "IGB SOFT-TECH",
+    "image": "https://igbsofttech.com/assets/images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lagos",
+      "addressCountry": "NG"
+    },
+    "priceRange": "₦₦",
+    "telephone": "+2348074022213"
+  },
+  "areaServed": ["Lagos", "Abuja", "Nigeria"],
+  "description": "Meta Ads, TikTok Ads, funnel strategy & analytics for lead generation and CAC reduction.",
+  "offers": {
+    "@type": "AggregateOffer",
+    "offerCount": "8",
+    "offers": [
+      { "@type": "Offer", "name": "Meta Ads Management" },
+      { "@type": "Offer", "name": "TikTok Ads Nigeria" },
+      { "@type": "Offer", "name": "Conversion Funnel Strategy" }
+    ]
+  }
+}
+</script>
+
+<!-- Navigation (unchanged structure, active state on services) -->
+<nav class="fixed w-full z-50 bg-primary/95 backdrop-blur-md border-b border-white/5">
+    <div class="container mx-auto px-4 py-3 md:py-4">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 md:space-x-3">
+                <img src="assets/images/logo.png" alt="IGB SOFT-TECH" class="h-8 md:h-10 w-auto" loading="eager">
+                <div class="hidden sm:block">
+                    <h1 class="text-lg md:text-xl font-bold leading-tight">IGB SOFT <span class="text-secondary">TECH</span></h1>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                <a href="index.html" class="hover:text-accent transition text-sm lg:text-base">Home</a>
+                <a href="about.html" class="hover:text-accent transition text-sm lg:text-base">About</a>
+                <a href="services.html" class="text-secondary font-semibold">Services</a>
+                <a href="portfolio.html" class="hover:text-accent transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-accent transition">Contact</a>
+                <a href="ratecard.html" class="bg-secondary text-primary px-3 lg:px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition whitespace-nowrap">Rate Card</a>
+            </div>
+            <button id="mobileMenuBtn" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-3 pb-4 text-base">
+            <a href="index.html" class="block py-2 hover:text-accent transition">Home</a>
+            <a href="about.html" class="block py-2 hover:text-accent transition">About</a>
+            <a href="services.html" class="block py-2 text-secondary font-semibold">Services</a>
+            <a href="portfolio.html" class="block py-2 hover:text-accent transition">Portfolio</a>
+            <a href="contact.html" class="block py-2 hover:text-accent transition">Contact</a>
+            <a href="ratecard.html" class="block bg-secondary text-primary px-4 py-2 rounded-lg font-semibold text-center">Rate Card</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO – positioning statement / authority -->
+<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="assets/images/Team.png" alt="Dark skin strategy team" class="w-full h-full object-cover opacity-20">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent"></div>
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl">
+            <span class="text-secondary font-semibold tracking-wider text-sm md:text-base">PAID MEDIA · FUNNELS · ANALYTICS</span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mt-4 leading-tight">
+                We turn ad spend into <span class="gradient-text">revenue growth</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl mt-6 max-w-2xl">Meta & TikTok Ads agency in Nigeria. We build high intent acquisition systems that lower CAC and scale predictable leads for Lagos & national brands.</p>
+            <div class="flex flex-wrap gap-4 mt-8">
+                <a href="#packages" class="bg-secondary text-primary px-8 py-4 rounded-lg font-bold hover:bg-yellow-500 transition text-base md:text-lg shadow-lg">Scale My Business →</a>
+                <a href="portfolio.html" class="border border-white/20 px-8 py-4 rounded-lg font-semibold hover:bg-white/5 transition">See case studies</a>
+            </div>
+            <!-- Trust badges -->
+            <div class="flex items-center gap-6 mt-10 text-gray-400 text-sm">
+                <span><i class="fas fa-chart-line text-accent mr-1"></i> 200+ campaigns optimized</span>
+                <span><i class="fas fa-bullseye text-secondary mr-1"></i> 40% avg. CAC reduction</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Problem agitation section – "Stop burning budget, start acquiring customers" -->
+<section class="py-16 md:py-24 bg-gray-900 border-y border-white/5">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto">
+            <span class="text-secondary text-sm font-bold tracking-widest">THE CHALLENGE</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-3">Why most Nigerian businesses waste 60% of ad spend</h2>
+            <p class="text-gray-400 text-lg mt-4">Low‑intent targeting, broken funnels, and platform mismanagement lead to high CAC and vanishing ROAS. You need more than boosted posts you need a performance system.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div class="glass-effect p-6 rounded-xl">
+                <i class="fas fa-funnel-dollar text-3xl text-secondary mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Funnel leaks</h3>
+                <p class="text-gray-400">Traffic that doesn’t convert because the offer or landing page isn’t aligned with ad creative.</p>
+            </div>
+            <div class="glass-effect p-6 rounded-xl">
+                <i class="fas fa-ad text-3xl text-accent mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Broad, unqualified audiences</h3>
+                <p class="text-gray-400">Serving ads to “everyone” instead of high intent buyer personas that actually purchase.</p>
+            </div>
+            <div class="glass-effect p-6 rounded-xl">
+                <i class="fas fa-chart-pie text-3xl text-secondary mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">No measurement</h3>
+                <p class="text-gray-400">Running campaigns without proper tracking = flying blind. We install analytics to optimize every naira.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Detailed service breakdown (revenue / lead gen focus) -->
+<section class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold">Performance services that drive revenue</h2>
+            <p class="text-gray-400 text-lg mt-3">Each service is engineered to reduce CAC, increase LTV, and scale lead volume.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Meta Ads (Facebook/Instagram) -->
+            <div id="meta-ads" class="glass-effect rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-16 h-16 bg-gradient-to-br from-secondary to-yellow-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fab fa-facebook-f text-2xl text-primary"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Meta Ads <span class="text-gray-400 text-sm font-mono ml-2">(Facebook & Instagram)</span></h3>
+                    <p class="text-gray-300 leading-relaxed">High intent buyer targeting, not just interests. We build lookalikes from your best customers, deploy dynamic creatives, and manage budgets for <span class="text-secondary font-semibold">lead gen or direct sales</span>. Daily optimization to keep CPA low.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Conversion API setup + pixel tracking</li>
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Retargeting flows + advantage+ shopping campaigns</li>
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Weekly creative refresh (static + UGC style)</li>
+                    </ul>
+                    <div class="mt-5">
+                        <span class="text-sm text-gray-500">Deliverable: </span><span class="text-white">monthly lead report, CAC dashboard, ad set roadmap</span>
+                    </div>
+                </div>
+            </div>
+            <!-- TikTok Ads -->
+            <div id="tiktok-ads" class="glass-effect rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-16 h-16 bg-gradient-to-br from-black to-gray-800 rounded-xl flex items-center justify-center flex-shrink-0 border border-white/10">
+                    <i class="fab fa-tiktok text-2xl text-white"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">TikTok Ads Nigeria</h3>
+                    <p class="text-gray-300 leading-relaxed">Dominate the fastest‑growing attention platform. We produce native‑style videos (or source UGC) and target by behavior, hashtags, and device. Perfect for brand awareness with direct response hooks.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Spark Ads & In feed conversions</li>
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Interest + viral hashtag targeting</li>
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Daily budget pacing & creative A/B tests</li>
+                    </ul>
+                    <div class="mt-5">
+                        <span class="text-sm text-gray-500">Deliverable: </span><span class="text-white">engagement metrics + landing page visits / leads</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Funnel Strategy + Analytics -->
+            <div id="funnel-strategy" class="glass-effect rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-16 h-16 bg-gradient-to-br from-accent to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-filter text-2xl text-white"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Conversion Funnel Architecture</h3>
+                    <p class="text-gray-300 leading-relaxed">We map out the customer journey from cold traffic to repeat buyer. Build landing pages, email/SMS follow‑ups, and whatsApp nurturing sequences so every lead is maximized.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Lead magnet / offer strategy</li>
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Multi‑channel nurturing (email, DM, retargeting)</li>
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Funnel metrics: CTR → CVR → ROAS</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Analytics & CRO -->
+            <div id="analytics" class="glass-effect rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-chart-simple text-2xl text-white"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">Performance Analytics & CRO</h3>
+                    <p class="text-gray-300 leading-relaxed">We don’t guess. Server‑side tracking, GA4 audits, and weekly reports show exactly which channel generates revenue. Plus conversion rate optimization on your landing pages.</p>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Custom dashboard (live CAC, ROAS, LTV)</li>
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Heatmaps + A/B testing on key pages</li>
+                        <li><i class="fas fa-check-circle text-secondary mr-2"></i>Attribution modeling (Facebook vs. TikTok)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- internal links to rate card + portfolio -->
+        <div class="flex flex-wrap justify-center gap-4 mt-12">
+            <a href="ratecard.html" class="bg-white/5 hover:bg-white/10 px-6 py-3 rounded-full text-sm font-medium"><i class="fas fa-file-invoice mr-2 text-secondary"></i>View detailed rate card</a>
+            <a href="portfolio.html" class="bg-white/5 hover:bg-white/10 px-6 py-3 rounded-full text-sm font-medium"><i class="fas fa-briefcase mr-2 text-accent"></i>See campaign results</a>
+        </div>
+    </div>
+</section>
+
+<!-- “How Our Campaigns Work” visual flow (4 steps) -->
+<section class="py-16 bg-gray-900/80">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Our 4‑phase performance engine</h2>
+        <p class="text-gray-400 text-center max-w-xl mx-auto mb-12">Transparency at every stage from audit to scaling.</p>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+            <!-- step 1 -->
+            <div class="glass-effect p-6 rounded-xl text-center relative z-10">
+                <span class="bg-secondary text-primary w-10 h-10 rounded-full inline-flex items-center justify-center font-bold text-xl mb-4">1</span>
+                <h3 class="text-xl font-bold mb-2">Audit & opportunity</h3>
+                <p class="text-gray-400 text-sm">We analyze your current data, audience, and funnel leaks to build a tailored acquisition plan.</p>
+            </div>
+            <!-- step 2 -->
+            <div class="glass-effect p-6 rounded-xl text-center relative z-10">
+                <span class="bg-secondary text-primary w-10 h-10 rounded-full inline-flex items-center justify-center font-bold text-xl mb-4">2</span>
+                <h3 class="text-xl font-bold mb-2">Creative & offer</h3>
+                <p class="text-gray-400 text-sm">High converting ad concepts + landing page alignment. We test hooks, visuals, and incentives.</p>
+            </div>
+            <!-- step 3 -->
+            <div class="glass-effect p-6 rounded-xl text-center relative z-10">
+                <span class="bg-secondary text-primary w-10 h-10 rounded-full inline-flex items-center justify-center font-bold text-xl mb-4">3</span>
+                <h3 class="text-xl font-bold mb-2">Precision targeting</h3>
+                <p class="text-gray-400 text-sm">Lookalikes, retargeting, and interest stacks to put your offer in front of high intent buyers.</p>
+            </div>
+            <!-- step 4 -->
+            <div class="glass-effect p-6 rounded-xl text-center relative z-10">
+                <span class="bg-secondary text-primary w-10 h-10 rounded-full inline-flex items-center justify-center font-bold text-xl mb-4">4</span>
+                <h3 class="text-xl font-bold mb-2">Scale & optimize</h3>
+                <p class="text-gray-400 text-sm">Daily bid management, creative refresh, and expansion to winning platforms (Meta / TikTok).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Study snippet (mini) -->
+<section class="py-16 md:py-20">
+    <div class="container mx-auto px-4">
+        <div class="glass-effect rounded-2xl p-8 md:p-12 border border-white/5 max-w-4xl mx-auto">
+            <span class="text-secondary text-sm font-bold">CASE STUDY SNIPPET</span>
+            <h2 class="text-2xl md:text-3xl font-bold mt-2">Lagos fashion brand: 3.2x ROAS in 60 days</h2>
+            <p class="text-gray-400 mt-4">We switched them from broad Instagram ads to a Meta + TikTok funnel with retargeting. <span class="text-white font-semibold">CAC dropped 44%</span> and they scaled from ₦1.2M to ₦4.5M monthly revenue from ads.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 text-center">
+                <div><span class="text-secondary text-2xl font-bold">3.2x</span><p class="text-gray-500 text-sm">ROAS</p></div>
+                <div><span class="text-secondary text-2xl font-bold">-44%</span><p class="text-gray-500 text-sm">CAC</p></div>
+                <div><span class="text-secondary text-2xl font-bold">+276%</span><p class="text-gray-500 text-sm">leads</p></div>
+                <div><span class="text-secondary text-2xl font-bold">₦4.5M</span><p class="text-gray-500 text-sm">monthly revenue</p></div>
+            </div>
+            <a href="portfolio.html" class="inline-block mt-8 text-accent hover:underline">Read full case study →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Packages / pricing section (anchor #packages) -->
+<section id="packages" class="py-16 md:py-20 bg-gray-900/70">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center">Social media advertising packages</h2>
+        <p class="text-gray-400 text-center max-w-xl mx-auto mt-3">Predictable monthly investment for full‑funnel management.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto mt-12">
+            <!-- Starter -->
+            <div class="glass-effect rounded-xl p-6 md:p-8 border border-white/5 hover:border-secondary transition">
+                <div class="text-center mb-5">
+                    <h3 class="text-xl md:text-2xl font-bold mb-2">Starter</h3>
+                    <div class="text-3xl md:text-4xl font-bold text-secondary mb-1">₦150,000</div>
+                    <p class="text-gray-400 text-sm">per month</p>
+                </div>
+                <ul class="space-y-3 mb-6 text-sm">
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>2 platforms (Meta + optional)</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>8 ad creatives / month</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>High intent targeting</li>
+                    <li class="flex items-center text-gray-500"><i class="fas fa-times mr-3"></i>Funnel strategy</li>
+                </ul>
+                <a href="https://wa.me/2348074022213?text=I'm%20interested%20in%20the%20Starter%20package" class="block w-full bg-gray-800 hover:bg-secondary hover:text-primary text-center py-3 rounded-lg font-semibold transition">Start campaign</a>
+            </div>
+            <!-- Growth (popular) -->
+            <div class="glass-effect rounded-xl p-6 md:p-8 border-2 border-secondary relative md:scale-105">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-primary px-3 py-1 rounded-full text-xs font-bold">MOST POPULAR</div>
+                <div class="text-center mb-5 mt-2">
+                    <h3 class="text-xl md:text-2xl font-bold mb-2">Growth</h3>
+                    <div class="text-3xl md:text-4xl font-bold text-secondary mb-1">₦350,000</div>
+                    <p class="text-gray-400 text-sm">per month</p>
+                </div>
+                <ul class="space-y-3 mb-6 text-sm">
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>4 platforms (Meta, TikTok)</li>
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>20 ad creatives / month</li>
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>Lookalike + retargeting stacks</li>
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>Weekly performance dashboard</li>
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>Basic funnel consulting</li>
+                </ul>
+                <a href="https://wa.me/2348074022213?text=I'm%20interested%20in%20the%20Growth%20package" class="block w-full bg-secondary text-primary text-center py-3 rounded-lg font-bold hover:bg-yellow-500 transition">Scale my business</a>
+            </div>
+            <!-- Premium -->
+            <div class="glass-effect rounded-xl p-6 md:p-8 border border-white/5 hover:border-secondary transition">
+                <div class="text-center mb-5">
+                    <h3 class="text-xl md:text-2xl font-bold mb-2">Premium</h3>
+                    <div class="text-3xl md:text-4xl font-bold text-secondary mb-1">₦600,000</div>
+                    <p class="text-gray-400 text-sm">per month</p>
+                </div>
+                <ul class="space-y-3 mb-6 text-sm">
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>All platforms + funnel architecture</li>
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>Unlimited creative testing</li>
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>Serverside analytics + CRO</li>
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>Dedicated strategist</li>
+                    <li><i class="fas fa-check text-green-500 mr-3"></i>Weekly in person/zoom review</li>
+                </ul>
+                <a href="https://wa.me/2348074022213?text=I'm%20interested%20in%20the%20Premium%20package" class="block w-full bg-gray-800 hover:bg-secondary hover:text-primary text-center py-3 rounded-lg font-semibold transition">Go premium</a>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 text-sm mt-6">All packages exclude ad spend. Custom retainers available for enterprises.</p>
+    </div>
+</section>
+
+<!-- FAQ (conversion-focused) -->
+<section class="py-16 md:py-20">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-3xl font-bold text-center mb-10">Frequently asked questions</h2>
+        <div class="space-y-5">
+            <details class="glass-effect p-5 rounded-lg open:bg-white/5">
+                <summary class="font-semibold text-lg cursor-pointer">What platforms do you specialize in as a Meta Ads agency Nigeria?</summary>
+                <p class="mt-3 text-gray-400">We focus on Facebook, Instagram, and TikTok Ads — the top converting channels for Nigerian audiences. We also advise on LinkedIn for B2B.</p>
+            </details>
+            <details class="glass-effect p-5 rounded-lg">
+                <summary class="font-semibold text-lg cursor-pointer">How do you reduce customer acquisition cost?</summary>
+                <p class="mt-3 text-gray-400">Through high intent audience layering (lookalikes, engaged custom audiences), creative that prequalifies, and constant bid/pacing optimization. We also plug funnel leaks.</p>
+            </details>
+            <details class="glass-effect p-5 rounded-lg">
+                <summary class="font-semibold text-lg cursor-pointer">Do you manage the ad spend or do we?</summary>
+                <p class="mt-3 text-gray-400">You retain full control of the ad account & billing. We manage strategy, creatives, and optimization. Some clients prefer us to have billing access for speed — we're transparent either way.</p>
+            </details>
+            <details class="glass-effect p-5 rounded-lg">
+                <summary class="font-semibold text-lg cursor-pointer">What results can I expect in the first 30 days?</summary>
+                <p class="mt-3 text-gray-400">We stabilize tracking, kill wasted spend, and usually see 20‑30% improvement in CPA. Full funnel scaling takes 60‑90 days.</p>
+            </details>
+        </div>
+        <div class="text-center mt-10">
+            <a href="contact.html" class="text-accent font-semibold hover:underline">Still have questions? Talk to our team →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-16 bg-gradient-to-br from-primary to-gray-900">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to turn ads into revenue?</h2>
+        <p class="text-gray-300 text-lg max-w-xl mx-auto mb-8">Let’s build a high‑conversion campaign tailored to your business goals.</p>
+        <a href="https://wa.me/2348074022213?text=Hello%20IGB%20SOFT-TECH%2C%20I%20want%20to%20scale%20my%20business%20with%20performance%20marketing" class="inline-block bg-secondary text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-yellow-500 transition shadow-2xl">Start My Campaign Strategy</a>
+        <p class="text-gray-500 text-sm mt-4">We reply within 2 hours during workdays.</p>
+    </div>
+</section>
+
+<!-- Footer (same as before) -->
+<footer class="bg-primary/80 border-t border-gray-800 pt-12 pb-6">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">IGB SOFT<span class="text-secondary">TECH</span></h3>
+                <p class="text-gray-400 text-sm">Premium digital marketing agency in Nigeria, delivering data driven results for brands.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-secondary text-xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-secondary text-xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-secondary text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-secondary text-xl"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="text-gray-400 hover:text-secondary">About Us</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-secondary">Services</a></li>
+                    <li><a href="portfolio.html" class="text-gray-400 hover:text-secondary">Portfolio</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-secondary">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Services</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#meta-ads" class="text-gray-400 hover:text-secondary">Meta Ads</a></li>
+                    <li><a href="#tiktok-ads" class="text-gray-400 hover:text-secondary">TikTok Ads</a></li>
+                    <li><a href="services.html#funnel-strategy" class="text-gray-400 hover:text-secondary">Funnel Strategy</a></li>
+                    <li><a href="ratecard.html" class="text-gray-400 hover:text-secondary">Rate Card</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-start space-x-2"><i class="fas fa-map-marker-alt text-secondary mt-1"></i><span class="text-gray-400">Asaba Delta State, Nigeria</span></li>
+                    <li class="flex items-start space-x-2"><i class="fas fa-phone-alt text-secondary mt-1"></i><span class="text-gray-400">+234 807 402 2213</span></li>
+                    <li class="flex items-start space-x-2"><i class="fas fa-envelope text-secondary mt-1"></i><span class="text-gray-400">jobs.igb013@gmail.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm pt-6 border-t border-gray-800">
+            <p>&copy; 2025 IGB SOFT-TECH. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/2348074022213?text=Hello%20IGB%20SOFT-TECH,%20I%20need%20a%20performance%20marketing%20solution" 
+   class="whatsapp-float bg-green-500 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition transform hover:scale-110" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-3xl text-white"></i>
+</a>
+
+<!-- Mobile menu toggle -->
+<script>
+(function() {
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    }
+})();
+</script>
+</body>
+</html>

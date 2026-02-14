@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html (optimized) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>About Us | IGB SOFT-TECH</title>
+
+    <!-- Tailwind CSS (early for performance) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Nigerian digital marketing agency specializing in social media advertising, branding, and digital strategy. Grow your business with measurable results.">
+    <meta name="keywords" content="digital marketing Nigeria, social media marketing, Lagos digital agency, Abuja marketing, SEO Nigeria">
+    <meta name="author" content="IGB SOFT-TECH">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="IGB SOFT-TECH | Premium Digital Marketing Agency">
+    <meta property="og:description" content="Transform your business with data-driven digital marketing strategies in Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://igbsofttech.com">
+    
+    <!-- Custom Tailwind Config (preserved) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D1F3C',
+                        secondary: '#FFB800',
+                        accent: '#00A8FF',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                        'gradient': 'gradient 8s ease infinite',
+                        'typing': 'typing 3.5s steps(40, end), blink-caret .75s step-end infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(255, 184, 0, 0.5)' },
+                            '50%': { opacity: 0.8, boxShadow: '0 0 40px rgba(255, 184, 0, 0.8)' }
+                        },
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS (minimal overrides for mobile) -->
+    <style>
+        * { -webkit-tap-highlight-color: transparent; }
+        .glass-effect { background: rgba(255,255,255,0.03); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.05); }
+        .gradient-text { background: linear-gradient(135deg, #FFB800, #00A8FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { -webkit-font-smoothing: antialiased; }
+        /* improve tap targets */
+        a, button { cursor: pointer; }
+        /* mobile menu smooth */
+        #mobileMenu { transition: all 0.2s ease; }
+    </style>
+    
+    <!-- Favicon (same placeholders) -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+</head>
+<body class="bg-gray-900 text-white font-sans overflow-x-hidden">
+
+    <!-- ===== MOBILE-OPTIMIZED NAVIGATION ===== -->
+    <nav class="fixed w-full z-50 bg-primary/95 backdrop-blur-md shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo with increased tap area -->
+                <a href="index.html" class="flex items-center space-x-2 py-1 min-h-[44px]">
+                    <img src="assets/images/logo.png" alt="IGB SOFT-TECH" class="h-9 w-auto" loading="eager">
+                    <div class="hidden xs:block md:hidden lg:block"> <!-- show on small+ and large, adjust -->
+                        <span class="text-lg font-bold">IGB SOFT <span class="text-secondary">TECH</span></span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu (hidden on mobile) -->
+                <div class="hidden md:flex md:items-center md:space-x-6">
+                    <a href="index.html" class="hover:text-accent transition text-sm lg:text-base">Home</a>
+                    <a href="about.html" class="text-secondary font-semibold hover:text-accent transition">About</a>
+                    <a href="services.html" class="hover:text-accent transition">Services</a>
+                    <a href="portfolio.html" class="hover:text-accent transition">Portfolio</a>
+                    <a href="contact.html" class="hover:text-accent transition">Contact</a>
+                    <a href="ratecard.html" class="bg-secondary text-primary px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition text-sm lg:text-base">Rate Card</a>
+                </div>
+
+                <!-- Mobile Menu Button + WhatsApp shortcut (mobile friendly) -->
+                <div class="flex items-center space-x-3 md:hidden">
+                    <!-- quick WhatsApp tap -->
+                    <a href="https://wa.me/2348074022213" class="bg-green-500 p-2 rounded-full w-10 h-10 flex items-center justify-center" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp text-white text-xl"></i>
+                    </a>
+                    <!-- hamburger -->
+                    <button id="mobileMenuBtn" class="text-2xl p-2 w-10 h-10 flex items-center justify-center focus:outline-none" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (collapsible) with large tap targets -->
+            <div id="mobileMenu" class="hidden md:hidden pt-4 pb-2 space-y-2 border-t border-white/10 mt-2">
+                <a href="index.html" class="block py-3 px-2 hover:bg-white/5 rounded-lg text-base">Home</a>
+                <a href="about.html" class="block py-3 px-2 text-secondary font-semibold bg-white/5 rounded-lg">About</a>
+                <a href="services.html" class="block py-3 px-2 hover:bg-white/5 rounded-lg">Services</a>
+                <a href="portfolio.html" class="block py-3 px-2 hover:bg-white/5 rounded-lg">Portfolio</a>
+                <a href="contact.html" class="block py-3 px-2 hover:bg-white/5 rounded-lg">Contact</a>
+                <a href="ratecard.html" class="block bg-secondary text-primary text-center py-3 px-2 rounded-lg font-semibold mt-3">Rate Card</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main content with proper top padding (mobile adjusted) -->
+    <main class="pt-20 md:pt-24">
+
+        <!-- Hero Section (mobile text balance) -->
+        <section class="relative py-12 md:py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 gradient-text px-2">About IGB SOFT-TECH</h1>
+                    <p class="text-lg md:text-xl text-gray-300 px-4">Leading digital transformation for Nigerian businesses since 2020</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision (stacked, with dark skin image placeholder) -->
+        <section class="py-12 md:py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+                    <!-- Mission card with Afrocentric illustration -->
+                    <div class="glass-effect rounded-2xl p-6 md:p-8 flex flex-col items-center md:items-start text-center md:text-left">
+                        <div class="w-16 h-16 bg-gradient-to-r from-secondary to-yellow-500 rounded-full flex items-center justify-center mb-4 flex-shrink-0">
+                            <i class="fas fa-bullseye text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Our Mission</h3>
+                        <p class="text-gray-300">To empower Nigerian businesses with innovative digital solutions that drive growth, enhance visibility, and maximize return on investment through data-driven strategies and cutting-edge technology.</p>
+                        <!-- image with dark skin team (decorative) -->
+                        <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Nigerian team member" class="mt-6 rounded-xl w-full max-w-xs mx-auto md:mx-0 object-cover h-40 md:h-48 shadow-lg">
+                    </div>
+                    
+                    <!-- Vision card with image -->
+                    <div class="glass-effect rounded-2xl p-6 md:p-8 flex flex-col items-center md:items-start text-center md:text-left">
+                        <div class="w-16 h-16 bg-gradient-to-r from-accent to-blue-500 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-eye text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Our Vision</h3>
+                        <p class="text-gray-300">To become Nigeria's most trusted digital marketing partner, recognized for transforming businesses and setting new standards in digital excellence across Africa.</p>
+                        <img src="https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Digital strategist" class="mt-6 rounded-xl w-full max-w-xs mx-auto md:mx-0 object-cover h-40 md:h-48 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story with rich image (dark skin) -->
+        <section class="py-12 md:py-20 bg-gray-900/50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12">Our Story</h2>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="space-y-5 text-gray-300">
+                            <p class="text-base md:text-lg">Founded in 2020, IGB SOFT-TECH emerged from a simple observation: Nigerian businesses possessed immense potential but often lacked the digital expertise to compete effectively.</p>
+                            <p class="text-base md:text-lg">Our founder, George Iwolo, recognized this gap and assembled a team of digital experts passionate about leveraging technology to solve business challenges. Starting with small local businesses in Asaba, we've grown to serve clients across Nigeria.</p>
+                            <p class="text-base md:text-lg">Today, we combine local market expertise with global best practices to deliver results that matter.</p>
+                        </div>
+                        <div class="order-first md:order-last mb-4 md:mb-0">
+                            <img src="https://images.pexels.com/photos/4050291/pexels-photo-4050291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nigerian business founder" class="rounded-2xl shadow-2xl w-full h-auto object-cover max-h-80 md:max-h-96">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values (unchanged but mobile spacing fine) -->
+        <section class="py-12 md:py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Our Core Values</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    <div class="text-center p-6 glass-effect rounded-2xl">
+                        <div class="w-16 h-16 bg-gradient-to-r from-secondary to-yellow-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-handshake text-2xl text-primary"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Integrity</h4>
+                        <p class="text-gray-400 text-sm md:text-base">We believe in transparent communication and honest reporting. No hidden costs, no false promises.</p>
+                    </div>
+                    <div class="text-center p-6 glass-effect rounded-2xl">
+                        <div class="w-16 h-16 bg-gradient-to-r from-accent to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-lightbulb text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Innovation</h4>
+                        <p class="text-gray-400 text-sm md:text-base">We stay ahead of digital trends and continuously adapt our strategies to deliver cutting-edge solutions.</p>
+                    </div>
+                    <div class="text-center p-6 glass-effect rounded-2xl sm:col-span-2 md:col-span-1">
+                        <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Results-Driven</h4>
+                        <p class="text-gray-400 text-sm md:text-base">Every strategy is measured against clear KPIs. We're only successful when our clients succeed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section (founder with dark skin photo) -->
+        <section class="py-12 md:py-20 bg-gray-900/50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Meet Our Founder</h2>
+                <div class="max-w-2xl mx-auto">
+                    <div class="glass-effect rounded-2xl p-6 md:p-8 text-center">
+                        <!-- actual image of dark skin man (George) from pexels (royalty-free) -->
+                        <div class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-5 rounded-full overflow-hidden border-4 border-secondary/30">
+                            <img src="assets/images/CEO.png"alt="Bolouowei George Iwolo - Nigerian founder" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-1">Bolouowei George Iwolo</h3>
+                        <p class="text-secondary mb-4">Founder & Digital Strategist</p>
+                        <p class="text-gray-300 mb-5 text-sm md:text-base">
+                            With over 5 years of experience in digital marketing and a deep understanding of the Nigerian market, George leads our team with passion and expertise. His vision drives our commitment to delivering exceptional results for every client.
+                        </p>
+                        <div class="flex justify-center space-x-5">
+                            <a href="https://wa.me/2348074022213" class="text-secondary hover:text-accent p-2">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                            </a>
+                            <a href="mailto:iwolo12geo@gmail.com" class="text-secondary hover:text-accent p-2">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section (mobile friendly) -->
+        <section class="py-12 md:py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Work With Us?</h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-6 max-w-2xl mx-auto">Let's discuss how we can help grow your business with our proven digital strategies</p>
+                <a href="https://wa.me/2348074022213" target="_blank" 
+                   class="inline-flex items-center bg-gradient-to-r from-secondary to-yellow-500 text-primary font-bold py-4 px-8 rounded-lg text-lg hover:scale-105 transition-transform shadow-lg gap-2">
+                    <i class="fab fa-whatsapp text-2xl"></i> Contact Us on WhatsApp
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (abbreviated, but functional - same as index style) -->
+    <footer class="bg-primary/80 border-t border-white/10 py-8 md:py-12">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2025 IGB SOFT-TECH. All rights reserved.</p>
+            <p class="mt-2 text-sm">Asaba • Lagos • Abuja</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp (mobile adjusted) -->
+    <a href="https://wa.me/2348074022213" target="_blank" 
+       class="fixed bottom-5 right-4 md:bottom-8 md:right-8 bg-green-500 w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <i class="fab fa-whatsapp text-white text-3xl md:text-4xl"></i>
+    </a>
+
+    <!-- Mobile menu toggle script (lightweight) -->
+    <script>
+        (function() {
+            const btn = document.getElementById('mobileMenuBtn');
+            const menu = document.getElementById('mobileMenu');
+            if (btn && menu) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    menu.classList.toggle('hidden');
+                });
+            }
+            // close menu on link click (optional)
+            document.querySelectorAll('#mobileMenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 768) {
+                        menu.classList.add('hidden');
+                    }
+                });
+            });
+        })();
+    </script>
+    <!-- link to script.js (optional) but keep fallback -->
+    <script src="script.js"></script>
+</body>
+</html>
